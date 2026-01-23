@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pages_principal{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+/*-----CSS HEADER INDEX-----*/
+.header_index{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+/*Menú de navegación*/
+.nav_menu{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:628px){
+    .nav_menu{
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+        background: rgb(0,0,0,0.3);
+    }
+    .items_nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+    .image_logo img{
+        margin-right: 1.5rem;
+        height: 40px;
+    }
+    .contenedor_banner{
+        width: 100%;
+        height: 80vh;
+    }
+    .hero_banner{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+/*Lista del menú de navegación*/
+.items_nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 3rem;
+    gap: 1.5rem;
+}
+.items_menu{
+    text-decoration: none;
+    color: #000;
+
+}
+/*Boton de login*/
+#btn--login{
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color:#CC8FB7;
+    color: #fff;
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.8);
+}
+/*Boton de reserva*/
+#btn--reserva{
+    background-color:#AF508F;
+    border-radius: 20px;
+    padding: 10px 25px;
+    color: #fff;
+    box-shadow:0 4px 10px rgba(0, 0, 0,0.8);
+} 
+.image_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    padding-left: 5rem;
+}
+.image_logo img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 25px rgba(255, 228, 181, 0.8);
+}
+.contenedor_banner{
+    width:100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+.hero_banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*-----CSS MAIN INDEX-----*/
+/*contenedor main acerca de nosotros*/
+
+
+/*contenedor main acerca de nosotros*/
+.main_index{
+    width: 100%;
+    max-width: 1600px;
+    background-color: #efefef;
+}
+.contenedor_main_index{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) 2fr;
+    grid-template-rows: repeat(3,0.5fr);
+    padding-top: 4rem;
+    margin: 0 auto;
+}
+.imagen_equipo_clienta{
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+}
+.imagen_equipo_clienta img{
+    width: 100%;
+    height: 100%;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    object-fit: cover;
+}
+.imagen_equipo{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-right: 5rem;
+}
+.informacion_equipo_de_trabajo{
+    grid-column: 3/4;
+    grid-row: 1/4;
+    margin-bottom: 4rem;
+    justify-items: start;
+    text-align: center;
+}
+.subtitulos_index{
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.parrafo_equipo_de_trabajo{
+    text-align: center;
+    line-height: 1.6;
+}
+.contenedor_main_index div img{
+    width: 350px;
+    height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8) ;
+}
+@media (max-width:628px){
+    .contenedor_main_index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        width: 100%;
+        max-width: 100%;
+    }
+    .contenedor_main_index div img{
+        justify-items:center;
+        align-items: center;
+        padding:0;
+        margin: 0;
+        width: 100%;
+        max-width:100%;
+    }
+    .imagen_equipo{
+        margin: 0 auto;
+    }
+    .subtitulos_index{
+        margin-top: 4rem;
+        padding:0 0 1rem 0;
+    }
+}
+/*Segundo contenedor main servicios*/
+.contenedor2_main_index{
+    width:100%;
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+}
+/*Contenido con grid servicios*/
+.contenido_servicios_index{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 100px repeat(4,1fr) 100px;
+    grid-template-rows:  repeat(2,40px) repeat(3,0.5fr);
+}
+.div_subtitulos_index{
+    grid-column: 1/7 ;
+    grid-row: 1/1;
+    justify-items: center;
+    align-items: center;
+}
+.servicios_manicure_index{
+    grid-column: 2/3 ;
+    grid-row: 3/4;
+}
+.imagen_servicios{
+    width: 100%;
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+.imagen_servicios,
+.boton_mas_informacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicios_manicure_index,
+.servicios_otros_index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.servicios_manicure_index ul li,
+.servicios_otros_index ul li{
+    margin-left: 5rem;
+}
+
+.servicios_pedicure_index{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    flex-direction: column;
+    padding-top: 2.5rem;
+}
+
+.imagen_servicios img{
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.8);
+}
+.servicios_pedicure_index{
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+.servicios_otros_index{
+    grid-column: 3/5;
+    grid-row: 4/5;
+}
+.boton_mas_informacion{
+    grid-column:3/5 ;
+    grid-row: 5/6 ;
+}
+.btn--mas_informacion{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 70px;
+    border-radius: 10px;
+    background-color: #A0522D;
+}
+/*-------------------------Inicio footer----------------*/
+.footer_index{
+    background-color: #DBDBDB;
+    border-top: 1px solid #000;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.8rem;
+}
+.contenedor_footer_index{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) auto;
+    grid-template-rows: 1fr 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+.informacion_footer{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.informacion_footer img{
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+}
+.contactos_footer{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.redes_sociales_footer{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.redes_sociales_footer,
+.contactos_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+.contactos_footer h4,
+.redes_sociales_footer h4{
+    padding-bottom: 0.5rem;
+}
+
+.contactos_footer ul li a,
+.redes_sociales_footer ul li a{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    color: #000;
+    
+}
+.contactos_footer ul li,
+.redes_sociales_footer ul li{
+    list-style: none;
+    padding: 1px 0;
+}
+.copyright_footer{
+    grid-column: 1/6;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+}
+.copy{
+    padding-right: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------Página-Servicios----------------------------------------*/
+.pages_servicios{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.header_servicios{
+    width: 100%;
+    height: 12vh;
+    max-width: 1600px;
+    margin: 0 auto;
+    background: rgb(217,173,202,0.3);
+} 
+.nav_menu_servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.image_logo_servicios img{
+    width: 5rem;
+    border-radius:5rem ;
+    margin-top: 0.2rem;
+    margin-left: 7rem;
+}
+.items_menu_servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: #000;
+}
+#btn--login-servicios{
+    color: #fff;
+    background-color: #CC8FB7;
+    margin-left: 1.5rem;
+    padding: 8px 20px;
+    border-radius: 15px;
+}
+#btn--reserva-servicios{
+    color: #fff;
+    background-color: #AF508F;
+    padding: 15px 25px;
+    margin-left: 1.5rem;
+    border-radius: 20px;
+}
