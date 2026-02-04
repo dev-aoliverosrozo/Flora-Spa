@@ -76,6 +76,13 @@
     text-decoration: none;
 }
 
+.nav_menu ul li .link-inicio{
+    color: #fff;
+}
+.nav_menu ul li .link-inicio:hover{
+    color: #000;
+}
+
 .nav_menu ul li a:hover{
     color: #fff;
 }
@@ -353,15 +360,15 @@
     grid-row: 5/6 ;
 }
 .contenido_servicios_index a.btn--mas_informacion{
-    color: #fff;
     padding: 15px 70px;
     border-radius: 10px;
-    background-color: #BD70A2;
+    color: #fff;
+    background-color: #AF508F;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.8);
 }
 .contenido_servicios_index a.btn--mas_informacion:hover{
     color: #000;
-    background-color: #AF508F;
+    background-color: #BD70A2;
 }
 
 
@@ -408,7 +415,8 @@
     justify-content: center;
     align-items: center;
     font-size:0.8rem;
-    background-color: #E9CEDF;
+    background: #f7b2b2;
+    background: linear-gradient(90deg,rgba(247, 178, 178, 1) 0%, rgba(250, 185, 230, 1) 35%, rgba(189, 112, 162, 1) 100%);
 }
 /*contenedor footer, medidas, grid y hover*/
 .contenedor_footer_index{
@@ -529,85 +537,296 @@ Estilos a los enlaces*/
 
 
 
-
-
-
-
 /*-------------------------------Página-Servicios----------------------------------------*/
+/*body pagina servicios*/
 .pages_servicios{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
 }
-.header_servicios{
+/*barra de navegación colores */
+.menu_color{
+    background: #fab9e6;
+    background: linear-gradient(90deg,rgba(250, 185, 230, 1) 21%, rgba(189, 112, 162, 1) 68%);
+}
+/*barra de navegación-items */
+.nav_link{
+    color: #000;
+    text-decoration: none;
+}
+.nav_link:hover{
+    color: #fff;
+}
+.navbar-titulo{
+    color: #502542;
+    text-decoration: none;
+}
+
+.nav_link--main{
+    color: #a54491;
+    text-decoration: none;
+}
+.nav_link--main:hover{
+    color:#fff;
+}
+.nav_link--main:active{
+    color:#fff;
+}
+
+/*Boton login*/
+.nav-lista ul li:nth-child(4) a {
+    padding: 5px 15px;
+    background-color: #a54491;
+    border-radius: 8px;
+}
+/*Boton reserva*/
+.nav-lista ul li:last-child a{
+    padding: 10px 15px;
+    background-color: #502542;
+    border-radius: 10px;
+}
+/*Estilos compartidos de login y reserva*/
+.nav-lista ul li:last-child a,
+.nav-lista ul li:nth-child(4) a{
+    color: #fff;
+}
+
+.nav-lista ul li:last-child a:hover,
+.nav-lista ul li:nth-child(4) a:hover{
+    color: #000;
+}
+/*Boton reserva hover*/
+/*Boton login hover*/
+.nav-lista ul li:last-child a:hover,
+.nav-lista ul li:nth-child(4) a:hover
+{
+    background-color: #ff93df;
+    border: 1px solid #a54491;
+}
+
+/*Titulo de la pagina de servicio color*/
+.titulo_servicios{
+    color: #502542;
+}
+/*Titulo de la pagina de servicio color*/
+.subtitulo_servicios{
+    color: #AF508F;
+    text-decoration: none;
+}
+/*color de fondo del carrusel pagina servicios*/
+.carrusel_contenedor{
+    background: linear-gradient(180deg, 
+    rgba(255, 252, 251, 1) 0%, 
+    rgba(242, 226, 221, 1) 50%, 
+    rgba(233, 194, 194, 1) 100%
+    );
+}
+/*color del boton reservar de la pagina servicios*/
+.color-boton{
+    background: #BD70A2;
+    border: 1px solid #a54491;
+}
+
+/* Altura fija de todas las cards */
+.card-fixed {
+    height: 450px;
+}
+
+/* Imágenes iguales del carrusel*/
+.card-fixed 
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.carousel-item {
+    min-height: 350px;
+}
+/*Boton reservar cards-carrusel*/
+.color-boton{
+    text-decoration: none;
+    background-color: #AF508F;
+}
+/*Bonton reservar cards-carrusel hover*/
+.color-boton:hover{
+    background-color: #fab9e6;
+    border: 1px solid  #fab9e6;
+    color: #a54491;
+}
+/*Boton de reservar cards-carrusel active*/
+.color-boton:active{
+    background-color: #fab9e6;
+    border: 1px solid  #fab9e6;
+    color: #a54491;
+}
+.color-boton:active{
+    background-color: #fab9e6;
+    border-color: #fab9e6;
+    color: #a54491;
+}
+
+
+.link-reservar:active{
+    background-color: #fab9e6;
+    color: #a54491;
+}
+/*Link reservar cards pedicure*/
+.card-pedicure{
+    border: 1px solid #a54491;
+}
+/*Boton de reserva de las cards pedicure*/
+.link-reservar{
+    text-decoration: none;
+    color: #a54491 ;
+}
+.link-reservar:hover{
+    color: #454545;
+
+}
+
+/*Color cards de otros servicios*/
+.card-otros{
+    background:#FFFAFD ;
+    color: #000;
+}
+
+/*-------------------------Inicio footer----------------*/
+.footer_index{
+    border-top: 1px solid #000;
     width: 100%;
-    height: 12vh;
-    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    background: linear-gradient(
+        90deg,
+        rgba(250, 185, 230, 1) 21%,
+        rgba(189, 112, 162, 1) 68%
+    );
+    overflow-x: hidden;
+}
+
+/* contenedor footer */
+.contenedor_footer_index{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    background: rgb(217,173,202,0.3);
-} 
-.nav_menu_servicios{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
-.image_logo_servicios img{
-    width: 5rem;
-    border-radius:5rem ;
-    margin-top: 0.2rem;
-    margin-left: 7rem;
+
+/* hover */
+.contenedor_footer_index a:hover,
+.contenedor_footer_index h4:hover{
+    color: #fff;
 }
-.items_servicios{
+
+/* información */
+.informacion_footer{
+    grid-column: 1 / 2;
+}
+
+.informacion_footer img{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+/* contactos */
+.contactos_footer{
+    grid-column: 3 / 4;
+}
+
+/* redes */
+.redes_sociales_footer{
+    grid-column: 4 / 5;
+}
+
+.contactos_footer,
+.redes_sociales_footer{
     display: flex;
-    flex-wrap: wrap;
-    margin-right: 2rem;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.contactos_footer h4,
+.redes_sociales_footer h4{
+    padding-bottom: 0.5rem;
+}
+
+.contactos_footer ul,
+.redes_sociales_footer ul{
+    padding: 0;
+    margin: 0;
+}
+
+.contactos_footer ul li,
+.redes_sociales_footer ul li{
     list-style: none;
-    padding-bottom: 3rem;
-    gap: 1.5rem;
+    padding: 2px 0;
 }
-.items_menu_servicios{
+
+.contactos_footer ul li a,
+.redes_sociales_footer ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* copyright */
+.copyright_footer{
+    grid-column: 1 / -1;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    gap: 2rem;
     margin-top: 1rem;
-    color: #000;
-}
-/*Botonoes login y reserva servicios*/
-.nav_menu_servicios ul li:nth-child(5) a,
-.nav_menu_servicios ul li:last-child a{
-    color: #fff;
-    margin-left: 1.5rem;
-}
-.nav_menu_servicios ul li:nth-child(5) a {
-    background-color: #CC8FB7;
-    padding: 8px 20px;
-    border-radius: 25px;
-}
-.nav_menu_servicios ul li:last-child a{
-    background-color: #AF508F;
-    padding: 15px 25px;
-    border-radius: 20px;
 }
 
-/*pseudoclases botonos*/
+.copy{
+    padding-right: 0;
+}
 
-/*menú de navegación*/
-.nav_menu_servicios ul .opciones_menu a:hover{
+/*---------------- media queres ----------------*/
+@media (max-width: 768px){
+    .contenedor_footer_index{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem;
+    }
 
-    transform: scale(1.1);
+    .informacion_footer{
+        grid-column: 1 / 3;
+        text-align: center;
+    }
+
+    .contactos_footer{
+        grid-column: 1 / 2;
+        grid-row: 2 / 2 ;
+        align-items: center;
+    }
+
+    .redes_sociales_footer{
+        grid-column: 2 / 3;
+        grid-row: 2/2;
+        align-items: center;
+    }
+
+    .copyright_footer{
+        grid-column: 1 / -1;
+        grid-row: 3 / 3;
+        flex-direction: column;
+        gap: 0.5rem;
+        border-top: 1px solid #AF508F;
+        padding-top: 1rem;
+    }
 }
-/*login y reserva*/
-.nav_menu_servicios ul li:nth-child(5) a:hover,
-.nav_menu_servicios ul li:last-child a:hover{
-    color: #000;
-    transform: scale(1.1);
+/* seguridad contra Bootstrap */
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
 }
-.nav_menu_servicios ul li:nth-child(5) a:hover:active{
-    background-color:#BD70A2;
-}
-.nav_menu_servicios ul li:last-child a:hover:active{
-    background-color: #70335B;
-}
+

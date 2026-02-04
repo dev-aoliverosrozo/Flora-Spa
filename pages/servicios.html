@@ -9,22 +9,448 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Hind+Mysuru:wght@300;400;500;600;700&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
-</head>
-<body class="pages_servicios">
-    <!-----------------------HEADER----------------------------->
-    <header class="header_servicios">
-        <nav class="nav_menu_servicios">
-            <div class="image_logo_servicios">
-                <img src="../image/Logo_header.png" alt="logo Spa Flora"> <!--Imagen logo header index-->
-            </div>
-            <ul class="items_servicios"> <!--Menú de navegación servicios-->
-                <li class="opciones_menu"><a class="items_menu_servicios" href="../index.html">INICIO</a></li>
-                <li class="opciones_menu"><a class="items_menu_servicios" href="../index.html #nosotros">NOSOTROS</a></li>
-                <li class="opciones_menu" ><a class="items_menu_servicios" href="./servicios.html">SERVICIOS</a></li>
-                <li class="opciones_menu" ><a class="items_menu_servicios" href="../index.html#contactos">CONTACTOS</a></li>
-                <li><a class="items_menu_servicios"  href="./pages/login.html">LOGIN</a></li>
-                <li><a  class="items_menu_servicios"  href="./pages/reservas.html">RESERVAS</a></li>
-            </ul>
-        </nav>
-</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+<link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body class="pages_servicios">
+        <!-----------------------HEADER----------------------------->
+    
+        <header>
+            <!--Menú de navegación servicios header-->
+            <nav class="navbar navbar-expand-lg menu_color">
+                <div class="container">
+                    <a class="navbar-titulo" href="./servicios.html">FLORA SPA</a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu_flora"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse nav-lista" id="menu_flora">
+                        <ul class="navbar-nav mx-auto py-2 gap-lg-4 gap-sm-3 gap-3">
+                            <li class="nav-item">
+                                <a class="nav_link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav_link--main active" aria-current="page" href="#">SERVICIOS</a>
+                            </li>
+                            <a class="nav_link" href="#contactos_servicios">CONTACTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav_link" href="./login.html">LOGIN</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav_link" href="./reservas.html">RESERVAS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--Incio de main servicios-->
+        <main class="main_servicios">
+            <!--Titulo y subtitulo main servicios-->
+            <div class="container text-center mt-5">
+                <h1 class="titulo_servicios fs-3 fw-normal ">Servicios Flora Spa</h1>
+                <h2><a class="subtitulo_servicios fs-4" href="#servicios_manicure" id="#servicios_manicure">Manicure</a></h2>
+            </div>
+<!-- CARRUSEL DE SERVICIOS -->
+
+    </main>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+    
+<!-------------------------- carrusel 1 -------------------->
+            <div class="carousel-item active carrusel_contenedor">
+                <div class="container py-4">
+                    <div class="row g-3 justify-content-center">
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/servicio_manicure_tradicional.png" class="card-img-top" alt="Imagen del servicio de uñas tradicional">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Tradicional</h5>
+                                    <p class="card-text">
+                                        Limpieza básica de uñas, corte, limado, cutícula y esmalte normal.
+                                    </p>
+                                    <a href="./reservas.html" class="btn color-boton mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/servicio_manicure_semipermante.png" class="card-img-top" alt="Imagen del servicio de uñas Semipermanente">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Semipermanente</h5>
+                                    <p class="card-text">
+                                        Esmalte en gel de larga duración con secado en lámpara.
+                                    </p>
+                                    <a href="./reservas.html" class="btn  color-boton mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/servicio_manicure_base_rubor.png" class="card-img-top" alt="Imagen del servicio de uñas base rubor">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Base + rubor</h5>
+                                    <p class="card-text">
+                                        Base fortalecedora con tono natural semipermanente.
+                                    </p>
+                                    <a href="./reservas.html" class="btn color-boton mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+<!-------------------------- carrusel 2 -------------------->
+            <div class="carousel-item carrusel_contenedor">
+                <div class="container py-4">
+                    <div class="row g-3 justify-content-center">
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/servicios_manicure_forrad_natural.png" class="card-img-top" alt="Imagen del servicio de uñas forrado en uña natural">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Forrado uña natural</h5>
+                                    <p class="card-text">
+                                        Construcción y refuerzo de la uña con gel constructor, puede incluir extensión o no.
+                                    </p>
+                                    <a href="./reservas.html" class="btn  color-boton  mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/servicio_unas_manicure_unas en gel (builder).png" class="card-img-top" alt="Imagen del servicio de uñas en gel">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Uñas en gel</h5>
+                                    <p class="card-text">
+                                        Aplicación de polygel solo para reforzar la uña natural, sin extensión.
+                                    </p>
+                                    <a href="./reservas.html" class="btn  color-boton mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/servicio_manicure_press_on.png" class="card-img-top" alt="">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Press on</h5>
+                                    <p class="card-text">
+                                        Uñas prefabricadas que se adhieren con pegamento o gel, listas y rápidas de aplicar.
+                                    </p>
+                                    <a href="./reservas.html" class="btn color-boton mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+<!-------------------------- carrusel 3 -------------------->
+            <div class="carousel-item carrusel_contenedor">
+                <div class="container py-4">
+                    <div class="row g-3 justify-content-center">
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/servicio_unas_manicure_poly_gel.png" class="card-img-top" alt="">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Poly gel</h5>
+                                    <p class="card-text">
+                                        Sistema híbrido entre gel y acrílico; ligero, resistente y fácil de moldear.
+                                    </p>
+                                    <a href="./reservas.html" class="btn color-boton mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/servicio_unas_forrado_en_polygel.png" class="card-img-top" alt="">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Forrado polygel</h5>
+                                    <p class="card-text">
+                                        Aplicación de polygel solo para reforzar la uña natural, sin extensión.
+                                    </p>
+                                    <a href="./reservas.html" class="btn color-boton mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/unas_acrilicas.png" class="card-img-top" alt="">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Uñas acrílicas</h5>
+                                    <p class="card-text">
+                                        Extensión de uñas con acrílico usando tip número 3 como base.
+                                    </p>
+                                    <a href="./reservas.html" class="btn color-boton mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+<!-------------------------- carrusel 4 -------------------->
+            <div class="carousel-item carrusel_contenedor">
+                <div class="container py-4">
+                    <div class="row g-3 justify-content-center">
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/servicios_unas_bano_acrílico.png" class="card-img-top" alt="">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Baño acrílico</h5>
+                                    <p class="card-text">
+                                        Capa fina de acrílico sobre la uña natural para darle fuerza sin alargar.
+                                    </p>
+                                    <a href="./reservas.html" class="btn  color-boton mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/servicios_uñas_relleno_de_unas.png" class="card-img-top" alt="">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Relleno</h5>
+                                    <p class="card-text">
+                                        Mantenimiento donde se rellena el crecimiento de la uña en acrílico, gel o polygel.
+                                    </p>
+                                    <a href="./reservas.html" class="btn  color-boton mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-4 d-flex">
+                            <div class="card card-fixed w-100">
+                                <img src="../image/carrusel_servicios/servicio_unas_decoracion.png" class="card-img-top" alt="">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Nail art</h5>
+                                    <p class="card-text">
+                                        Diseños personalizados: dibujos, piedras, encapsulados, stickers, etc.
+                                    </p>
+                                    <a href="./reservas.html" class="btn color-boton mt-auto">RESERVAR</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon "></span>
+        </button>
+    
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!------contenedor cards pedicure ------------->
+    <section class="container text-center mt-5" id="servicios_pedicure">
+    
+        <h2 class="fs-4">
+            <a class="subtitulo_servicios" href="#servicios_pedicure">Pedicure</a>
+        </h2>
+    
+        <div class="row justify-content-center g-4 mt-3">
+    
+            <!-- Pedicure Tradicional -->
+            <div class="col-12 col-md-8 col-lg-6 d-flex justify-content-center">
+                <div class="card mb-3 w-100 card-pedicure">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="../image/cards_pedicure/pedicure_tradicional.png" class="img-fluid rounded-start"
+                                alt="Pedicure tradicional">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-start">
+                                <h5 class="card-title"> Tradicional</h5>
+                                <p class="card-text">
+                                    Limpieza profunda, corte y limado de uñas, cuidado de cutículas,
+                                    exfoliación suave e hidratación.
+                                </p>
+                                <p class="card-text">
+                                    <a href="./reservas.html" class="link-reservar">
+                                        Reservar
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Pedicure Semipermanente -->
+            <div class="col-12 col-md-8 col-lg-6 d-flex justify-content-center">
+                <div class="card mb-3 w-100 card-pedicure">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="../image/cards_pedicure/pedicure_semipermante.png" class="img-fluid rounded-start"
+                                alt="Pedicure semipermanente">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-start">
+                                <h5 class="card-title">Semipermanente</h5>
+                                <p class="card-text">
+                                    Pedicure completo con esmaltado semipermanente de larga duración,
+                                    brillo intenso y acabado profesional.
+                                </p>
+                                <p class="card-text text ">
+                                    <a href="./reservas.html" class="link-reservar">
+                                        Reservar
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+<!---------------------contenedor otros servicios----------------------->
+
+    <section class="row justify-content-center g-2 mt-4 pb-5" id="servicios_otros">
+        <h2 class="fs-4 text-center py-4 ">
+            <a class="subtitulo_servicios" href="#servicios_otros">Otros Servicios</a>
+        </h2>
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card text-secondary card-otros mb-2" style="max-width: 18rem;">
+                <div class="card-header">Retoques</div>
+                <div class="card-body">
+                    <h5 class="card-title">Retoques en acrílico</h5>
+                    <p class="card-text">
+                        Corrección de pequeñas imperfecciones, levantamientos o golpes
+                        en uñas acrílicas para mantener un acabado prolijo y duradero.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card text-secondary card-otros mb-2" style="max-width: 18rem;">
+                <div class="card-header">Retiro</div>
+                <div class="card-body">
+                    <h5 class="card-title">Retiro de material</h5>
+                    <p class="card-text">
+                        Eliminación segura de acrílico, semipermanente, polygel o press on
+                        realizados en otro lugar, cuidando la uña natural.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card text-secondary card-otros mb-2" style="max-width: 18rem;">
+                <div class="card-header">Hombres</div>
+                <div class="card-body">
+                    <h5 class="card-title">Manicure y pedicure para hombres</h5>
+                    <p class="card-text">
+                        Limpieza, corte, limado y cuidado de cutículas y piel, sin esmalte
+                        o con acabado natural según preferencia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <footer class="footer_index mt-5 ">
+        <div class="contenedor_footer_index">
+            <!--Contenedor información footer-->
+            <div class="informacion_footer">
+                <img src="../image/icon.png" alt="logo flora spa">
+                <p>En Flora Spa trabajamos con productos de calidad y técnicas actuales, garantizando resultados duraderos y un servicio personalizado que se adapta a tus gustos y necesidades.</p>
+            </div>
+            <!--Contenedor contactos footer-->
+            <div class="contactos_footer" >
+                <h4 class="subtitulo_footer" id="contactos_servicios">Contacto</h4>
+                <ul>
+                    <li><a href="https://www.whatsapp.com"><i class="ti ti-phone"></i>57-(123) 456-789</a></li>
+                    <li><a href="https://www.whatsapp.com"><i class="ti ti-brand-whatsapp"></i>57-(123) 456-789</a></li>
+                    <li><a href="https://www.gmail.com"><i class="ti ti-mail"></i>correospa@gmail.com</a></li>
+                </ul>
+            </div>
+            <!--Contenedor redes sociales footer-->
+            <div class="redes_sociales_footer">
+                <h4> Redes Sociales</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com"><i class="ti ti-brand-facebook"></i>@sparflora_190.</a></li>
+                    <li><a href="https://www.instagram.com"><i class="ti ti-brand-instagram"></i>@spa__190.</a></li>
+                    <li><a href="https://www.tiktok.com"><i class="ti ti-brand-tiktok"></i>@spa__190.</a></li>
+                </ul>
+            </div>
+            <!--Contenedor copyright footer-->
+            <div class="copyright_footer">
+                <p class="copy"> floraspa&copy; Todos los derechos reservados</p>
+                <p>sitio web elaborado por Devel.andrea_rozo</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    </body>
+    
+    </html>
